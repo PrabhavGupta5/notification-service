@@ -26,6 +26,11 @@ public class NotificationEventConsumer {
     public void consume(UserEvent event) {
         log.info("Event received: {}", event);
 
+        if(event.getEventType() == null) {
+            log.warn("Received event with null eventType, skipping processing.");
+            throw new RuntimeException("Event type cannot be null");
+        }
+
         notificationService.processNotification(event);
 
         // Save the notification to the database
