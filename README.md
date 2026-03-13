@@ -20,11 +20,22 @@
 	Event Service → Kafka → Notification Service → WebSocket → Client
 	
 	Flow:
-		1.	Event Service publishes user events to Kafka.
-		2.	Notification Service consumes the event.
-		3.	Notification is stored in PostgreSQL.
-		4.	Redis updates unread notification counter.
-		5.	WebSocket pushes notification instantly to connected clients.
+		Event Service
+      	  ↓
+	Kafka Topic (user-events)
+	      ↓
+	Notification Service Consumer
+	      ↓
+	Processing success → store notification
+	      
+	Processing failure
+	      ↓
+	Retry 3 times
+	      ↓
+	Still failing
+	      ↓
+	Send to user-events.DLT
+		
 
 ## Project Structure: 
 		notification-service
