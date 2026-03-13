@@ -51,6 +51,7 @@ notification-service
 │
 └── NotificationServiceApplication
 
+
 Future Improvements
 	•	Notification preferences
 	•	Email / SMS notifications
