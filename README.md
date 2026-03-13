@@ -70,7 +70,6 @@
 ## Future Improvements
 	•	Notification preferences
 	•	Email / SMS notifications
-	•	Dead Letter Queue for failed Kafka events
 	•	Rate limiting
 	•	Notification batching
 
