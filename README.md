@@ -15,6 +15,10 @@
 	•	WebSockets
 	•	Docker
 
+## HLD 
+<img width="688" height="311" alt="HLD" src="https://github.com/user-attachments/assets/49aea95f-8296-4d71-8c0b-e76ee9b83d03" />
+
+
 ## System Architecture
 	
 	Event Service → Kafka → Notification Service → WebSocket → Client
