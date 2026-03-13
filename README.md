@@ -27,29 +27,29 @@ Flow:
 	5.	WebSocket pushes notification instantly to connected clients.
 
 Project Structure: 
-notification-service
-│
-├── consumer
-│   └── NotificationConsumer
-│
-├── service
-│   └── NotificationService
-|   └── RedisService
-|   └── WebSocketService
-│
-├── Consumer
-│   └── NotificationEventConsumer
-│
-├── entity
-│   └── Notification
-│
-├── repository
-│   └── NotificationRepository
-│
-├── config
-│   └── WebSocketConfig
-│
-└── NotificationServiceApplication
+		notification-service
+		│
+		├── consumer
+		│   └── NotificationConsumer
+		│
+		├── service
+		│   └── NotificationService
+		|   └── RedisService
+		|   └── WebSocketService
+		│
+		├── Consumer
+		│   └── NotificationEventConsumer
+		│
+		├── entity
+		│   └── Notification
+		│
+		├── repository
+		│   └── NotificationRepository
+		│
+		├── config
+		│   └── WebSocketConfig
+		│
+		└── NotificationServiceApplication
 
 
 Future Improvements
